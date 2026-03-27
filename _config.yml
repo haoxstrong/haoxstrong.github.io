@@ -1,17 +1,23 @@
 # 博客基础信息
 title: Hao的技术博客
 description: 分享编程、技术与生活思考
-baseurl: "" # 个人博客必须留空
-url: "https://haoxstrong.github.io" # 你的博客地址
-author:
-  name: haoxstrong
-  email: haoxueqiang@gmail.com
+baseurl: ""
+url: "https://haoxstrong.github.io"
+author: haoxstrong
 
 # 主题与构建
-theme: minima # GitHub 官方推荐的极简主题
+remote_theme: cotes2020/chirpy
 plugins:
-  - jekyll-feed # 自动生成 RSS 订阅
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
 
 # 文章配置
-permalink: /:year/:month/:day/:title.html # 文章 URL 格式
-# paginate: 5 # 每页显示 5 篇文章
+permalink: /posts/:title/
+paginate: 5
+paginate_path: "/page/:num/"
+
+# 主题特有配置
+timezone: Asia/Shanghai
+lang: zh-CN
