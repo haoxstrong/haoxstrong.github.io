@@ -14,4 +14,4 @@ plugins:
 
 # 文章配置
 permalink: /:year/:month/:day/:title.html # 文章 URL 格式
-paginate: 5 # 每页显示 5 篇文章
+# paginate: 5 # 每页显示 5 篇文章
